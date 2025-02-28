@@ -45,6 +45,12 @@ minima:
   # solarized-dark	   Dark variant of solarized color scheme.
   # solarized	         Adaptive skin for solarized color scheme skins.
   skin: classic
+
+  # Add collections section here
+  collections:
+    posts:
+      output: true
+      permalink: /:categories/:year/:month/:day/:title/
   
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 

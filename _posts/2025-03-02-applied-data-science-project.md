@@ -33,4 +33,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eg
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
-https://mathslearn.github.io/itd214/2024/08/01/applied-data-science-project.html
+https://github.com/mathslearn/itd214_proj

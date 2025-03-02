@@ -359,9 +359,7 @@ Critical Values: {'1%': -3.4310214251582605, '5%': -2.8618367291146485, '10%': -
 1. Three models were ran: Daily, weekly and monthly.
 2. Performance metrics: Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE).
 3. Results were close to one another.
-
 ![image](https://github.com/user-attachments/assets/d100eae5-20a5-4ee7-8dd8-8975d026174a)
-
 4. Monthly model most accurate.
 5. Daily model the worst: More sensitive to short-term variations so less stable and harder to use for long-term forecasting.
 6. Rather say which model is the best, better to view each model serves its own purpose.

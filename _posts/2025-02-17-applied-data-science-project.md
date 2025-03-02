@@ -283,9 +283,20 @@ x = df[['year', 'month', 'day', 'weekofyear', 'day_of_week_Mon', 'day_of_week_Tu
 y = df['sentiment']
 ```
 
+**Model Design**
+1. Machine Learning Models
+a. K-Nearest Neighbors: n_neighbors tuned from 5 to 50 in stepsize of 5
+b. Support Vector Machine (SVM)
+c. Logistic Regression
+d. Decision Trees: min_samples_split tuned as 2, 10, 20, 30
+e. Gaussian Naive Bayes
+f. Random Forest: n_estimators tuned from 5 to 30 in stepsize of 5
+g. Gradient Boosting
 
-
-
+2. AutoRegressive Integrated Moving Average (ARIMA) Time Series Forecasting Model
+a. daily
+b. weekly
+c. yearly
 
 ### Evaluation
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.

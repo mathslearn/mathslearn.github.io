@@ -92,12 +92,14 @@ reviews.username        9222
 sourceURLs              1433
 websites                1327
 ```
+
+2. 'reviews.rating' most promising categorical variable to use as five categories can be easily grouped
+'province' not attractive because need spend effort to group 46 categories further.
 ```python
 Unique values in column 'primaryCategories': ['Accommodation & Food Services'
  'Accommodation & Food Services,Arts Entertainment & Recreation'
  'Accommodation & Food Services,Administrative & Support & Waste Management & Remediation'
  'Accommodation & Food Services,Agriculture']
-
 Unique values in column 'country': ['US']
 Unique values in column 'province': ['CA' 'KY' 'LA' 'CO' 'IL' 'IN' 'FL' 'AK' 'GA' 'AL' 'AZ' 'AR' 'OR' 'WA'
  'UT' 'TX' 'TN' 'SC' 'PA' 'OH' 'NY' 'NM' 'MD' 'MI' 'MS' 'MO' 'IA' 'VA'

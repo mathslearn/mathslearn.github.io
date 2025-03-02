@@ -299,7 +299,39 @@ y = df['sentiment']
    * yearly
 
 ### Evaluation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+1. Machine Learning Models
+   * Metrics: Mean CV Accuracy, Train Accuracy, Test Accuracy, Train Precision, Test Precision.
+   * Highest accuracies came from KNC models.
+   * But model cannot predict negative sentiment.
+
+	Model	Cross-Validation Accuracy Scores	Mean CV Accuracy	Train Accuracy	Test Accuracy	Train Precision	Test Precision
+6	KNC(n=35)	[0.7693, 0.7692, 0.7692, 0.7697, 0.7697]	0.7694	0.7693	0.7697	0.5919	0.5924
+7	KNC(n=40)	[0.7693, 0.7692, 0.7692, 0.7697, 0.7697]	0.7694	0.7693	0.7697	0.5919	0.5924
+8	KNC(n=45)	[0.7693, 0.7692, 0.7692, 0.7697, 0.7697]	0.7694	0.7693	0.7697	0.5919	0.5924
+9	KNC(n=50)	[0.7693, 0.7692, 0.7692, 0.7697, 0.7697]	0.7694	0.7693	0.7697	0.5919	0.5924
+11	LR	[0.7693, 0.7692, 0.7692, 0.7697, 0.7697]	0.7694	0.7693	0.7697	0.5919	0.5924
+5	KNC(n=30)	[0.7693, 0.7677, 0.7692, 0.7697, 0.7692]	0.7690	0.7696	0.7692	0.7459	0.6693
+23	GB	[0.7683, 0.7687, 0.7697, 0.7692, 0.7677]	0.7687	0.7720	0.7677	0.8241	0.6307
+10	SVM	[0.7693, 0.7687, 0.7666, 0.7687, 0.7677]	0.7682	0.7731	0.7677	0.8174	0.5921
+4	KNC(n=25)	[0.7688, 0.7682, 0.7692, 0.7692, 0.7671]	0.7685	0.7699	0.7671	0.7462	0.6251
+16	GNB	[0.7708, 0.761, 0.7666, 0.7636, 0.7631]	0.7650	0.7660	0.7631	0.6793	0.6632
+2	KNC(n=15)	[0.7606, 0.761, 0.7584, 0.7646, 0.761]	0.7611	0.7723	0.7610	0.7400	0.6444
+3	KNC(n=20)	[0.7662, 0.762, 0.7651, 0.7656, 0.761]	0.7640	0.7701	0.7610	0.7176	0.6286
+1	KNC(n=10)	[0.7335, 0.7462, 0.7349, 0.739, 0.7303]	0.7368	0.7717	0.7303	0.7259	0.6373
+15	DT(min_samples_samples split=30)	[0.7212, 0.7124, 0.7134, 0.7323, 0.7149]	0.7189	0.7812	0.7149	0.7473	0.6345
+0	KNC(n=5)	[0.7182, 0.7329, 0.7247, 0.718, 0.7134]	0.7214	0.7818	0.7134	0.7487	0.6383
+19	RF(n=15)	[0.7074, 0.7032, 0.7134, 0.6929, 0.7042]	0.7042	0.8178	0.7042	0.8055	0.6402
+21	RF(n=25)	[0.7033, 0.7108, 0.7057, 0.7021, 0.7011]	0.7046	0.8205	0.7011	0.8084	0.6407
+14	DT(min_samples_samples split=20)	[0.6997, 0.6965, 0.7032, 0.7011, 0.7006]	0.7002	0.7899	0.7006	0.7628	0.6363
+20	RF(n=20)	[0.7084, 0.7088, 0.7073, 0.697, 0.6996]	0.7042	0.8203	0.6996	0.8082	0.6382
+22	RF(n=30)	[0.7049, 0.7062, 0.7062, 0.7042, 0.6981]	0.7039	0.8208	0.6981	0.8094	0.6364
+18	RF(n=10)	[0.7049, 0.7052, 0.7057, 0.6909, 0.6899]	0.6993	0.8157	0.6899	0.8009	0.6357
+17	RF(n=5)	[0.7003, 0.7001, 0.6868, 0.6868, 0.6791]	0.6906	0.8072	0.6791	0.7884	0.6315
+13	DT(min_samples_samples split=10)	[0.6706, 0.6694, 0.6847, 0.674, 0.6709]	0.6739	0.8052	0.6709	0.7858	0.6370
+12	DT(min_samples_split=2)	[0.6645, 0.651, 0.6699, 0.6597, 0.6535]	0.6597	0.8214	0.6535	0.8076	0.6368
+```
+
+3. 
 
 ## Recommendation and Analysis
 Explain the analysis and recommendations

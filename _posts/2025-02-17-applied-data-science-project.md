@@ -394,7 +394,11 @@ Figure: Monthly model shows 12-month forecast of sentiment = 0.8 (80% likely pos
 ## AI Ethics
 Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
 
-
+1. Data privacy: Ensure consent has been obtained for the collection and use of data. When seeking consent, consent release should not look innocuous or hidden in fine print.
+2. Fairness: The dataset has a field, reviews.username which holds the username of the account that posted the hotel review. While some usernames may look fictitious, for some other usernames, gender and ethnicity may be inferred. Thus, users of the dataset should not use username as a feature. This is to avoid possible bias.
+3. Accuracy: In terms of accuracy for our project, inaccurate topic modelling may lead to incoorect identification or priorisation of improvements. For example, if room view is given more importance than cleanliness, then the customer may not receive the most important service improvement first.
+4. Accountability: A mistake may arise from the topic modelling, sentiment analysis or time series analysis in our business scenario. Therefore the hotel needs to be accountable and mitigate risks. For example, it can cross-check the performance of different models.
+5. Transparency: Customers should be able to know which suggestion is artificial intelligence (AI)-powered so that they can give feedback to the hotel on the suggestion.
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 

@@ -285,13 +285,13 @@ y = df['sentiment']
 
 **Model Design**
 1. Machine Learning Models
-  a. K-Nearest Neighbors: n_neighbors tuned from 5 to 50 in stepsize of 5
-  b. Support Vector Machine (SVM)
-  c. Logistic Regression
-  d. Decision Trees: min_samples_split tuned as 2, 10, 20, 30
-  e. Gaussian Naive Bayes
-  f. Random Forest: n_estimators tuned from 5 to 30 in stepsize of 5
-  g. Gradient Boosting
+   - K-Nearest Neighbors: n_neighbors tuned from 5 to 50 in stepsize of 5
+   - Support Vector Machine (SVM)
+   - Logistic Regression
+   - Decision Trees: min_samples_split tuned as 2, 10, 20, 30
+   - Gaussian Naive Bayes
+   - Random Forest: n_estimators tuned from 5 to 30 in stepsize of 5
+   - Gradient Boosting
 
 2. AutoRegressive Integrated Moving Average (ARIMA) Time Series Forecasting Model
   a. daily

@@ -4,6 +4,11 @@ author: Name
 title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
+## Nanyang Polytechnic
+## Post-Diploma Certificate in Applied Data Science
+## ITD214 Applied Data Science Project
+## 2 Mar 2025
+
 ## Project Background
 **Scenario Background**
 1. Hotels in the USA have collected quantitative data (reviews.rating) and qualitative data (reviews.text) over a period of 15 years 5 months from 1 Sep 2003 to 30 Jan 2019.
@@ -12,8 +17,7 @@ categories: ITD214
 **Business Goal**
 1. To help USA hotels to improve their service.
 
-**Business Objectives**<br>
-Group 4<br>
+**Business Objectives (Group 4)**
 1. Identify what key topics consumers typically reveal in their reviews (topic modelling by Hazizul)
 2. Predict whether a review is a positive or negative sentiment (sentiment analysis by Teng Teng)
 3. Identify time period that drives positive or negative sentiment (time series analysis by Shao Mun)

@@ -322,10 +322,38 @@ y = df['sentiment']
 2. Highest accuracy came from GNB model.
 3. Accuracies worsened from no sampling to undersampling of the majority class (sentiment=1) in the training set.
 4. However model can predict negative sentiment but not very well.
+5. Since the machine learning models do not seem to predict well, proceeded to try AutoRegressive Integrated Moving Average (ARIMA) time series forecasting model.
 
 ![image](https://github.com/user-attachments/assets/21947d68-7c68-4bff-8960-c1bfc5d57eb2)
 
 ![image](https://github.com/user-attachments/assets/04086bfa-70d0-4662-b419-a7a54d32abdf)
+
+**AutoRegressive Integrated Moving Average (ARIMA) Time Series Forecasting Model**
+1. Need check whether time series data is stationary.
+2. Check reveals time series data is stationary.
+3. The null hypothesis of the Augmented Dickey-Fuller (ADF) test is that the series is non-stationary.
+4. Since the p-value is significantly less than 0.05 (in fact, it's very close to 0), you can reject the null hypothesis and conclude that the data is stationary.
+5. The ADF Statistic (-12.11) is much smaller than the critical values at the 1%, 5%, and 10% levels (e.g., -3.43 at the 1% level). This further confirms that the data does not have a unit root and is indeed stationary.
+6. ARIMA modelling needs time series to be stationary. Since the ADF test shows that the series is stationary, therefore can proceed to do ARIMA modelling.
+
+```python
+# Augmented Dickey-Fuller (ADF) test. The null hypothesis of the ADF test is that the series is non-stationary.
+from statsmodels.tsa.stattools import adfuller
+
+# Perform ADF test on the 'sentiment' column (you can replace with your target variable)
+result = adfuller(df3['sentiment'])
+
+# Print the results
+print("ADF Statistic:", result[0])
+print("p-value:", result[1])
+print("Critical Values:", result[4])
+```
+
+```python
+ADF Statistic: -12.111143448908674
+p-value: 1.9181150644839028e-22
+Critical Values: {'1%': -3.4310214251582605, '5%': -2.8618367291146485, '10%': -2.56692794378353}
+```
 
 ## Recommendation and Analysis
 Explain the analysis and recommendations

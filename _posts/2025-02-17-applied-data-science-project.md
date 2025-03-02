@@ -28,12 +28,10 @@ categories: ITD214
 1. Searched for reviews and found hotel reviews dataset at https://www.kaggle.com/datasets/datafiniti/hotel-reviews
 2. Three datasets after download, chose dataset where reviews.rating were integers, Datafiniti_Hotel_Reviews_Jun19.csv
 
-**Data Fields Description**<br>
-Shape (10000, 26)<br>
-Number of rows: 10000<br>
-Number of columns: 26<br>
-
-df.dtypes:
+**Data Fields Description**
+1. Number of rows: 10000
+2. Number of columns: 26
+3. df.dtypes:
 id                       object
 dateAdded                object
 dateUpdated              object

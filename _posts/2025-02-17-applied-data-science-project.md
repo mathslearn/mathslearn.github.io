@@ -17,12 +17,50 @@ categories: ITD214
 2. Predict whether a review is a positive or negative sentiment (sentiment analysis by Teng Teng)
 3. Identify time period that drives positive or negative sentiment (time series analysis by Shao Mun)
 
-
 ## Work Accomplished
-Document your work done to accomplish the outcome
+1. Identify time period that drives positive or negative sentiment (time series analysis by Shao Mun)
 
 ### Data Preparation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+**Data Collection Sources**
+1. Kaggle
+
+**Acquire/Select Data**
+1. Searched for reviews and found hotel reviews dataset at https://www.kaggle.com/datasets/datafiniti/hotel-reviews
+2. Three datasets after download, chose dataset where reviews.rating were integers, Datafiniti_Hotel_Reviews_Jun19.csv
+
+**Data Fields Description**
+Shape (10000, 26)
+Number of rows: 10000
+Number of columns: 26
+
+df.dtypes:
+id                       object
+dateAdded                object
+dateUpdated              object
+address                  object
+categories               object
+primaryCategories        object
+city                     object
+country                  object
+keys                     object
+latitude                float64
+longitude               float64
+name                     object
+postalCode               object
+province                 object
+reviews.date             object
+reviews.dateAdded       float64
+reviews.dateSeen         object
+reviews.rating            int64
+reviews.sourceURLs       object
+reviews.text             object
+reviews.title            object
+reviews.userCity         object
+reviews.userProvince     object
+reviews.username         object
+sourceURLs               object
+websites                 object
+
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.

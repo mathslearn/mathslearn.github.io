@@ -5,7 +5,7 @@ title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
 ## Project Background
-Scenario Background
+#Scenario Background
 1. Hotels in the USA have collected quantitative data (reviews.rating) and qualitative data (reviews.text) over a period of 17 years
 2. Would like to see what actionable insights can be derived from the collected data
 

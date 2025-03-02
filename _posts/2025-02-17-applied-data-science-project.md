@@ -357,9 +357,11 @@ Critical Values: {'1%': -3.4310214251582605, '5%': -2.8618367291146485, '10%': -
 
 **AutoRegressive Integrated Moving Average (ARIMA) Time Series Forecasting Model**
 1. Three models were ran: Daily, weekly and monthly.
-2. Performance metrics: Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE)
-![image](https://github.com/user-attachments/assets/d100eae5-20a5-4ee7-8dd8-8975d026174a)
+2. Performance metrics: Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE).
 3. Results were close to one another.
+
+![image](https://github.com/user-attachments/assets/d100eae5-20a5-4ee7-8dd8-8975d026174a)
+
 4. Monthly model most accurate.
 5. Daily model the worst: More sensitive to short-term variations so less stable and harder to use for long-term forecasting.
 6. Rather say which model is the best, better to view each model serves its own purpose.
@@ -368,15 +370,21 @@ Critical Values: {'1%': -3.4310214251582605, '5%': -2.8618367291146485, '10%': -
 9. Monthly model gives a broader picture of sentiment trends which is useful for business or marketing strategies.
 
 Figure: Daily model shows 30-day forecast of sentiment = 0.8 (80% likely positive)
+
 ![image](https://github.com/user-attachments/assets/c0cee53a-feb7-4a16-b035-ab8fabc0d029)
+
 ![image](https://github.com/user-attachments/assets/7f4351de-7bbf-4f69-a684-8371d6175244)
 
 Figure: Weekly model shows 12-week forecast of sentiment = 0.8 (80% likely positive)
+
 ![image](https://github.com/user-attachments/assets/a9f9db7f-6963-4363-9d99-333b5bc6199d)
+
 ![image](https://github.com/user-attachments/assets/010187d7-1340-4c36-a5c8-83cb11f0106a)
 
 Figure: Monthly model shows 12-month forecast of sentiment = 0.8 (80% likely positive)
+
 ![image](https://github.com/user-attachments/assets/b8ad0863-d46c-4108-b927-cc563e3b76d8)
+
 ![image](https://github.com/user-attachments/assets/8349abe6-4b97-439c-8598-fa3102e46416)
 
 ## Recommendation and Analysis

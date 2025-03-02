@@ -4,7 +4,7 @@ author: Name
 title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
-<p>**Nanyang Polytechnic**</p>
+**Nanyang Polytechnic**<br>
 **Post-Diploma Certificate in Applied Data Science**<br>
 **ITD214 Applied Data Science Project**<br>
 **2 Mar 2025**

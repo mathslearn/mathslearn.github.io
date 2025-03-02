@@ -154,11 +154,11 @@ websites                10000
 print('Count number of duplicate rows:', df.duplicated().sum())
 ```
 
-```
+```python
 Count number of duplicate rows: 210
 ```
 
-```
+```python
 # Identify duplicate rows with keep='first' (this marks duplicates as True except for the first occurrence).
 duplicates_to_drop = df.duplicated(keep='first') # This shows all rows, each with its Boolean result, True or False.
 

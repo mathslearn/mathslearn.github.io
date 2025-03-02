@@ -7,7 +7,7 @@ categories: ITD214
 **Nanyang Polytechnic**<br>
 **Post-Diploma Certificate in Applied Data Science**<br>
 **ITD214 Applied Data Science Project**<br>
-**WOng S M**<br>
+**Wong S M**<br>
 **2 Mar 2025**
 
 ## Project Background

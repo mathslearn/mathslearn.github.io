@@ -155,6 +155,12 @@ print('Count number of duplicate rows:', df.duplicated().sum())
 Count number of duplicate rows: 210
 ```
 
+	id	dateAdded	dateUpdated	address	categories	primaryCategories	city	country	keys	latitude	...	reviews.dateSeen	reviews.rating	reviews.sourceURLs	reviews.text	reviews.title	reviews.userCity	reviews.userProvince	reviews.username	sourceURLs	websites
+5438	AV1eT1uE3-Khe5l_NHZp	2017-07-20T04:44:05Z	2019-03-22T07:59:17Z	25205 W Yuma Rd	Family-Friendly Hotels,Hotels and motels,Budge...	Accommodation & Food Services	Buckeye	US	us/az/buckeye/25205wyumard/-1213004828	33.431600	...	2017-12-16T00:00:00Z	3	https://www.tripadvisor.com/Hotel_Review-g3117...	MoreMore	Needs Attention	Nutrioso	Arizona	r0n0ldm	https://www.tripadvisor.com/Hotel_Review-g3117...	https://www.wyndhamhotels.com/
+3404	AV1eTOBYa4HuVbed6vjj	2017-07-20T04:41:22Z	2019-05-07T09:37:06Z	23339 Highway 65	Hotels and motels,Hotel	Accommodation & Food Services	Lincoln	US	us/mo/lincoln/23339highway65/2047639055	38.350067	...	2017-07-14T00:00:00Z	4	http://tripadvisor.com/Hotel_Review-g44604-d64...	We stayed in the Aztec Suite and it was cozy a...	peaceful and unique	Cincinnati	Ohio	Jennifer M	http://tripadvisor.com/Hotel_Review-g44604-d64...	http://www.bunkhouselodge.info
+3403	AV1eTOBYa4HuVbed6vjj	2017-07-20T04:41:22Z	2019-05-07T09:37:06Z	23339 Highway 65	Hotels and motels,Hotel	Accommodation & Food Services	Lincoln	US	us/mo/lincoln/23339highway65/2047639055	38.350067	...	2017-12-16T00:00:00Z	4	https://www.tripadvisor.com/Hotel_Review-g4460...	We stayed in the Aztec Suite and it was cozy a...	peaceful and unique	West Chester	Ohio	Brady and Jenni... M	http://tripadvisor.com/Hotel_Review-g44604-d64...	http://www.bunkhouselodge.info
+7467
+
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 

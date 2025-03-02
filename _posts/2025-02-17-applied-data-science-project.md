@@ -70,7 +70,7 @@ dateAdded               1341
 dateUpdated             1397
 address                 1432
 categories               631
-<span style="color:red">primaryCategories          4</span>
+primaryCategories          4
 city                     842
 country                    1
 keys                    1433

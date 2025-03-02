@@ -205,6 +205,10 @@ df = df[df['reviews.text'] != 'MoreMore']
 183               3  we checked in around 8pm room air conditioner ...
 185               3  This is a 1960's era resort motel, a bit out d...
 ```
+Number of rows with sentiment = 0 (negative) per month for each year
+![image](https://github.com/user-attachments/assets/6ed64bef-56a7-4556-8d6f-32a57716d220)
+
+
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.

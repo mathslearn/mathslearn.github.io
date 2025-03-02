@@ -37,6 +37,7 @@ categories: ITD214
 1. Number of rows: 10000
 2. Number of columns: 26
 3. df.dtypes:
+
 ```python
 id                       object
 dateAdded                object
@@ -68,6 +69,7 @@ websites                 object
 
 **Data Exploration**
 1. Three fields with lesser categories shortlisted to explore further for modelling: 'primaryCategories', 'province' and 'reviews.rating'.
+
 ```python
 Number of unique values in columns of df:
 id                      1433
@@ -100,6 +102,7 @@ websites                1327
 
 2. 'reviews.rating' most promising categorical variable to use as five categories can be easily grouped.
 3. 'province' not attractive because need spend effort to group 46 categories further.
+
 ```python
 Unique values in column 'primaryCategories': ['Accommodation & Food Services'
  'Accommodation & Food Services,Arts Entertainment & Recreation'
@@ -116,6 +119,7 @@ Unique values in column 'reviews.rating': [3 4 5 2 1]
 
 **Data Quality**
 1. Majority of fields have all rows filled, especially those with potential for modelling: 'reviews.date', 'reviews.rating' and 'reviews.text' (each with 10k rows).
+
 ```python
 Count number of rows with non-empty values:
 id                      10000
@@ -219,6 +223,7 @@ Figure: Percentage of Reviews per Sentiment per Year
 ![image](https://github.com/user-attachments/assets/ca87b939-ab17-453e-bf53-ae8cb1c59184)
 
 6. Distribution of negative sentiment (sentiment=0) and positive sentiment (sentiment=1).
+
 ```python
    sentiment  count  percentage
 1          0   2253   23.058029
@@ -226,6 +231,7 @@ Figure: Percentage of Reviews per Sentiment per Year
 ```
 
 8. Considered 'primaryCategories' but too highly imbalanced so will not be selected as feature to model.
+
 ```python
 # Count the occurrences of each unique value in 'primaryCategories'
 category_counts = df['primaryCategories'].value_counts()
@@ -244,6 +250,7 @@ Accommodation & Food Services,Agriculture                                       
 
 **Format Data**
 1. Convert 'reviews.date' column to datetime objects, specifying the correct format.
+
 ```python
 df['reviews.date'] = pd.to_datetime(df['reviews.date'], format='ISO8601') # alternative for ISO8601 format
 ```
@@ -275,6 +282,7 @@ Figure: Correlation Heatmap of df
 
 **Integrate Data**
 1. Declare time-related variables as features and sentiment as target variable.
+
 ```python
 # Declare features, X with columns: year, month, day, weekofyear, day_of_week_Mon, day_of_week_Tue, day_of_week_Wed, day_of_week_Thu, day_of_week_Fri, day_of_week_Sat, day_of_week_Sun.
 x = df[['year', 'month', 'day', 'weekofyear', 'day_of_week_Mon', 'day_of_week_Tue', 'day_of_week_Wed',

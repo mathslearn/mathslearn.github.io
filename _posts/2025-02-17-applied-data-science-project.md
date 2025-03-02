@@ -29,9 +29,9 @@ categories: ITD214
 2. Three datasets after download, chose dataset where reviews.rating were integers, Datafiniti_Hotel_Reviews_Jun19.csv
 
 **Data Fields Description**
-Shape (10000, 26)
-Number of rows: 10000
-Number of columns: 26
+Shape (10000, 26)<br>
+Number of rows: 10000<br>
+Number of columns: 26<br>
 
 df.dtypes:
 id                       object

@@ -252,6 +252,7 @@ df['reviews.date'] = pd.to_datetime(df['reviews.date'], format='ISO8601') # alte
 **Construct Data**
 1. Extract year, month, day, weekofyear and day_of_week for time series analysis.
 2. Apply one-hot encoding for day_of_week.
+
 ```python
 # Extract year, month, day and weekofyear from 'reviews.date'.
 df['year'] = df['reviews.date'].dt.year

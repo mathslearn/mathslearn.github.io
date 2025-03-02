@@ -309,7 +309,7 @@ y = df['sentiment']
 
 ### Evaluation
 **Machine Learning Models (first iteration)**
-1. Metrics: Mean CV Accuracy, Train Accuracy, Test Accuracy, Train Precision, Test Precision.
+1. Performance metrics: Mean CV Accuracy, Train Accuracy, Test Accuracy, Train Precision, Test Precision.
 2. Highest accuracies came from KNC models.
 3. But model cannot predict negative sentiment.
 
@@ -355,15 +355,39 @@ p-value: 1.9181150644839028e-22
 Critical Values: {'1%': -3.4310214251582605, '5%': -2.8618367291146485, '10%': -2.56692794378353}
 ```
 
-## Recommendation and Analysis
-Explain the analysis and recommendations
+**AutoRegressive Integrated Moving Average (ARIMA) Time Series Forecasting Model**
+1. Three models were ran: Daily, weekly and monthly.
+2. Performance metrics: Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE)
+![image](https://github.com/user-attachments/assets/d100eae5-20a5-4ee7-8dd8-8975d026174a)
+3. Results were close to one another.
+4. Monthly model most accurate.
+5. Daily model the worst: More sensitive to short-term variations so less stable and harder to use for long-term forecasting.
+6. Rather say which model is the best, better to view each model serves its own purpose.
+7. Daily model helps with daily analysis of sentiment spike.
+8. Weekly model can help to smooth out the daily fluctuations.
+9. Monthly model gives a broader picture of sentiment trends which is useful for business or marketing strategies.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Figure: Daily model shows 30-day forecast of sentiment = 0.8 (80% likely positive)
+![image](https://github.com/user-attachments/assets/c0cee53a-feb7-4a16-b035-ab8fabc0d029)
+![image](https://github.com/user-attachments/assets/7f4351de-7bbf-4f69-a684-8371d6175244)
+
+Figure: Weekly model shows 12-week forecast of sentiment = 0.8 (80% likely positive)
+![image](https://github.com/user-attachments/assets/a9f9db7f-6963-4363-9d99-333b5bc6199d)
+![image](https://github.com/user-attachments/assets/010187d7-1340-4c36-a5c8-83cb11f0106a)
+
+Figure: Monthly model shows 12-month forecast of sentiment = 0.8 (80% likely positive)
+![image](https://github.com/user-attachments/assets/b8ad0863-d46c-4108-b927-cc563e3b76d8)
+![image](https://github.com/user-attachments/assets/8349abe6-4b97-439c-8598-fa3102e46416)
+
+## Recommendation and Analysis
+1. All 3 models (daily, weekly, monthly) shows forecast of sentiment = 0.8 (80% likely positive).
+2. Means a likely 20% chance of getting negative sentiment.
+3. Hotel can reschedule existing staff or hire more staff to have 20% more man hours to handle potential negative sentiment.
 
 ## AI Ethics
 Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 

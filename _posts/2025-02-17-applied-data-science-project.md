@@ -243,13 +243,39 @@ Accommodation & Food Services,Agriculture                                       
 ```
 
 **Format Data**
+1. Convert 'reviews.date' column to datetime objects, specifying the correct format.
 ```python
-# Convert 'reviews.date' column to datetime objects, specifying the correct format
 df['reviews.date'] = pd.to_datetime(df['reviews.date'], format='ISO8601') # alternative for ISO8601 format
 ```
 
 ### Modelling
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+**Construct Data**
+1. Extract year, month, day, weekofyear and day_of_week for time series analysis.
+2. Apply one-hot encoding for day_of_week.
+```python
+# Extract year, month, day and weekofyear from 'reviews.date'.
+df['year'] = df['reviews.date'].dt.year
+df['month'] = df['reviews.date'].dt.month
+df['day'] = df['reviews.date'].dt.day
+df['weekofyear'] = df['reviews.date'].dt.isocalendar().week
+
+# Extract day of the week (e.g., Mon, Tue, etc.)
+df['day_of_week'] = df['reviews.date'].dt.strftime('%a')  # Short format (Mon, Tue)
+
+# Apply one-hot encoding for df['day_of_week'] column.
+df = pd.get_dummies(df, columns=['day_of_week'], dtype=int)
+```
+
+**Integrate Data**
+1. Declare time-related variables as features and sentiment as target variable.
+```python
+# Declare features, X with columns: year, month, day, weekofyear, day_of_week_Mon, day_of_week_Tue, day_of_week_Wed, day_of_week_Thu, day_of_week_Fri, day_of_week_Sat, day_of_week_Sun.
+x = df[['year', 'month', 'day', 'weekofyear', 'day_of_week_Mon', 'day_of_week_Tue', 'day_of_week_Wed',
+        'day_of_week_Thu', 'day_of_week_Fri', 'day_of_week_Sat', 'day_of_week_Sun']]
+
+# Declare target variable, Y with column: sentiment.
+y = df['sentiment']
+```
 
 ### Evaluation
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.

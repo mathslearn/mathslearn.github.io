@@ -92,6 +92,21 @@ reviews.username        9222
 sourceURLs              1433
 websites                1327
 ```
+```python
+Unique values in column 'primaryCategories': ['Accommodation & Food Services'
+ 'Accommodation & Food Services,Arts Entertainment & Recreation'
+ 'Accommodation & Food Services,Administrative & Support & Waste Management & Remediation'
+ 'Accommodation & Food Services,Agriculture']
+
+Unique values in column 'country': ['US']
+Unique values in column 'province': ['CA' 'KY' 'LA' 'CO' 'IL' 'IN' 'FL' 'AK' 'GA' 'AL' 'AZ' 'AR' 'OR' 'WA'
+ 'UT' 'TX' 'TN' 'SC' 'PA' 'OH' 'NY' 'NM' 'MD' 'MI' 'MS' 'MO' 'IA' 'VA'
+ 'WI' 'HI' 'ID' 'NV' 'WV' 'WY' 'KS' 'MN' 'NE' 'ND' 'DE' 'OK' 'NC' 'MT'
+ 'SD' 'RI' 'NJ' 'MA']
+Unique values in column 'reviews.dateAdded': [nan]
+Unique values in column 'reviews.rating': [3 4 5 2 1]
+```
+
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.

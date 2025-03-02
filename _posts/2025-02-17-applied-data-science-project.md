@@ -147,6 +147,9 @@ websites                10000
 ```
 
 **CLean Data**
+1. A total of 210+1+18=229 rows were dropped.
+2. Number of rows were decreased from 10,000 to 9,771.
+
 ```python
 print('Count number of duplicate rows:', df.duplicated().sum())
 ```
@@ -168,7 +171,7 @@ df.reset_index(drop=True, inplace=True)
 # Drop row with index 3404 because it is the same as row with index 3403.
 df = df.drop(index=3404)
 
-# Drop rows where reviews.text=MoreMore.
+# Drop 18 rows where reviews.text=MoreMore.
 df = df[df['reviews.text'] != 'MoreMore']
 ```
 

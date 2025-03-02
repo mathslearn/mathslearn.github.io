@@ -304,6 +304,8 @@ y = df['sentiment']
    * Highest accuracies came from KNC models.
    * But model cannot predict negative sentiment.
 
+```
+python
 	Model	Cross-Validation Accuracy Scores	Mean CV Accuracy	Train Accuracy	Test Accuracy	Train Precision	Test Precision
 6	KNC(n=35)	[0.7693, 0.7692, 0.7692, 0.7697, 0.7697]	0.7694	0.7693	0.7697	0.5919	0.5924
 7	KNC(n=40)	[0.7693, 0.7692, 0.7692, 0.7697, 0.7697]	0.7694	0.7693	0.7697	0.5919	0.5924

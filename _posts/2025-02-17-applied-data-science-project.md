@@ -205,8 +205,14 @@ df = df[df['reviews.text'] != 'MoreMore']
 183               3  we checked in around 8pm room air conditioner ...
 185               3  This is a 1960's era resort motel, a bit out d...
 ```
-Number of rows with sentiment = 0 (negative) per month for each year
+Figure: Number of rows with sentiment = 0 (negative) per month for each year
 ![image](https://github.com/user-attachments/assets/6ed64bef-56a7-4556-8d6f-32a57716d220)
+Figure: Number of rows with sentiment = 1 (positive) per month for each year
+![image](https://github.com/user-attachments/assets/5e1d3f0d-37db-477c-9c51-ebc6a065baba)
+Figure: Number of Reviews per Sentiment per Year
+![image](https://github.com/user-attachments/assets/a606b80b-ecbc-48ae-9bdb-31026fb9f946)
+Figure: Percentage of Reviews per Sentiment per Year
+![image](https://github.com/user-attachments/assets/ca87b939-ab17-453e-bf53-ae8cb1c59184)
 
 
 

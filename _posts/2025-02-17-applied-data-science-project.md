@@ -12,7 +12,8 @@ categories: ITD214
 **Business Goal**
 1. To help USA hotels to improve their service.
 
-**Business Objectives**
+**Business Objectives**<br>
+Group 4<br>
 1. Identify what key topics consumers typically reveal in their reviews (topic modelling by Hazizul)
 2. Predict whether a review is a positive or negative sentiment (sentiment analysis by Teng Teng)
 3. Identify time period that drives positive or negative sentiment (time series analysis by Shao Mun)

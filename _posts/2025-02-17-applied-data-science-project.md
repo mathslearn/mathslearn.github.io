@@ -61,6 +61,38 @@ sourceURLs               object
 websites                 object
 ```
 
+**Data Exploration**
+1. Three fields with lesser categories shortlisted to explore further for modelling: 'primaryCategories', 'province' and 'reviews.rating'
+```python
+Number of unique values in columns of df:
+id                      1433
+dateAdded               1341
+dateUpdated             1397
+address                 1432
+categories               631
+<span style="color:red">primaryCategories          4</span>
+city                     842
+country                    1
+keys                    1433
+latitude                1430
+longitude               1431
+name                    1311
+postalCode              1149
+province                  46
+reviews.date            3370
+reviews.dateAdded          0
+reviews.dateSeen         701
+reviews.rating             5
+reviews.sourceURLs      8228
+reviews.text            9770
+reviews.title           8470
+reviews.userCity        3101
+reviews.userProvince     244
+reviews.username        9222
+sourceURLs              1433
+websites                1327
+```
+
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 

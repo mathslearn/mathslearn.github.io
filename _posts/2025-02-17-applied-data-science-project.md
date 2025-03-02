@@ -266,6 +266,12 @@ df['day_of_week'] = df['reviews.date'].dt.strftime('%a')  # Short format (Mon, T
 df = pd.get_dummies(df, columns=['day_of_week'], dtype=int)
 ```
 
+**Feature Selection: Correlation Analysis**
+1. Heatmap shows sentiment to be highly positively correlated to reviews.rating which is expected as sentiment is a derived variable of reviews.rating.
+
+Figure: Correlation Heatmap of df
+![image](https://github.com/user-attachments/assets/79b83ff7-57ad-4c9b-bbad-ba6b418fe73f)
+
 **Integrate Data**
 1. Declare time-related variables as features and sentiment as target variable.
 ```python
@@ -277,11 +283,7 @@ x = df[['year', 'month', 'day', 'weekofyear', 'day_of_week_Mon', 'day_of_week_Tu
 y = df['sentiment']
 ```
 
-**Correlation Analysis**
-1. Heatmap shows sentiment to be highly positively correlated to reviews.rating which is expected as sentiment is a derived variable of reviews.rating.
 
-Figure: Correlation Heatmap of df
-![image](https://github.com/user-attachments/assets/79b83ff7-57ad-4c9b-bbad-ba6b418fe73f)
 
 
 

@@ -218,7 +218,14 @@ Figure: Number of Reviews per Sentiment per Year
 Figure: Percentage of Reviews per Sentiment per Year
 ![image](https://github.com/user-attachments/assets/ca87b939-ab17-453e-bf53-ae8cb1c59184)
 
-6. Considered 'primaryCategories' but too highly imbalanced so will not be selected as feature to model.
+6. Distribution of negative sentiment (sentiment=0) and positive sentiment (sentiment=1).
+```python
+   sentiment  count  percentage
+1          0   2253   23.058029
+0          1   7518   76.941971
+```
+
+8. Considered 'primaryCategories' but too highly imbalanced so will not be selected as feature to model.
 ```python
 # Count the occurrences of each unique value in 'primaryCategories'
 category_counts = df['primaryCategories'].value_counts()

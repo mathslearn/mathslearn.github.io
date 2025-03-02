@@ -308,20 +308,20 @@ y = df['sentiment']
    * yearly
 
 ### Evaluation
-1. Machine Learning Models (first iteration)
-   * Metrics: Mean CV Accuracy, Train Accuracy, Test Accuracy, Train Precision, Test Precision.
-   * Highest accuracies came from KNC models.
-   * But model cannot predict negative sentiment.
+**Machine Learning Models (first iteration)**
+1. Metrics: Mean CV Accuracy, Train Accuracy, Test Accuracy, Train Precision, Test Precision.
+2. Highest accuracies came from KNC models.
+3. But model cannot predict negative sentiment.
 
 ![image](https://github.com/user-attachments/assets/f2b8c3d1-0fad-4512-8dfb-0ed7399f51a5)
 
 ![image](https://github.com/user-attachments/assets/471d2c53-e1a3-47e0-888b-d94d97f0c0f9)
 
-2. Machine Learning Models (second iteration)
-   * Tried undersampling of the majority class (sentiment=1) in the training set.
-   * Highest accuracy came from GNB model.
-   * Accuracies worsened from no sampling to undersampling of the majority class (sentiment=1) in the training set.
-   * However model can predict negative sentiment but not very well.
+**Machine Learning Models (second iteration)**
+1. Tried undersampling of the majority class (sentiment=1) in the training set.
+2. Highest accuracy came from GNB model.
+3. Accuracies worsened from no sampling to undersampling of the majority class (sentiment=1) in the training set.
+4. However model can predict negative sentiment but not very well.
 
 ![image](https://github.com/user-attachments/assets/21947d68-7c68-4bff-8960-c1bfc5d57eb2)
 

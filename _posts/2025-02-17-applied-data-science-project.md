@@ -62,7 +62,7 @@ websites                 object
 ```
 
 **Data Exploration**
-1. Three fields with lesser categories shortlisted to explore further for modelling: 'primaryCategories', 'province' and 'reviews.rating'
+1. Three fields with lesser categories shortlisted to explore further for modelling: 'primaryCategories', 'province' and 'reviews.rating'.
 ```python
 Number of unique values in columns of df:
 id                      1433
@@ -93,8 +93,8 @@ sourceURLs              1433
 websites                1327
 ```
 
-2. 'reviews.rating' most promising categorical variable to use as five categories can be easily grouped
-'province' not attractive because need spend effort to group 46 categories further.
+2. 'reviews.rating' most promising categorical variable to use as five categories can be easily grouped.
+3. 'province' not attractive because need spend effort to group 46 categories further.
 ```python
 Unique values in column 'primaryCategories': ['Accommodation & Food Services'
  'Accommodation & Food Services,Arts Entertainment & Recreation'
@@ -109,6 +109,37 @@ Unique values in column 'reviews.dateAdded': [nan]
 Unique values in column 'reviews.rating': [3 4 5 2 1]
 ```
 
+**Data Quality**
+1. Majority of fields have all rows filled, especially those with potential for modelling: 'reviews.date', 'reviews.rating' and 'reviews.text' (each with 10k rows).
+```python
+Count number of rows with non-empty values:
+id                      10000
+dateAdded               10000
+dateUpdated             10000
+address                 10000
+categories              10000
+primaryCategories       10000
+city                    10000
+country                 10000
+keys                    10000
+latitude                10000
+longitude               10000
+name                    10000
+postalCode              10000
+province                10000
+reviews.date            10000
+reviews.dateAdded           0
+reviews.dateSeen        10000
+reviews.rating          10000
+reviews.sourceURLs      10000
+reviews.text            10000
+reviews.title            9999
+reviews.userCity        10000
+reviews.userProvince     9998
+reviews.username        10000
+sourceURLs              10000
+websites                10000
+```
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
